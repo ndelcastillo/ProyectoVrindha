@@ -1,0 +1,26 @@
+.indexHeader {
+    background-color: map-get($color, "grey900");
+    box-shadow: 0px 5px 20px lightgray;
+
+    nav {
+        padding: 10px;
+        height: auto;
+        width: 100%;
+
+        .indexHeaderContainer {
+        }
+        .navbar-brand img {
+                height: auto;
+                width: 120px;
+            }
+
+        .navbar-troggler {
+
+        }
+        .navbar-collapse a{
+            color: map-get($color, "black");
+            font-family: map-get($font, "alternative1");
+            font-size: map-get($fontSize, "paragraph");
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.indexKendra {
+    height: auto;
+    width: 100%;
+    margin-top: 100px;
+
+    .boxImg1 {
+        img {
+            // width: 625px;
+            // height: 391px;
+            width: 100%;
+            height: 40vh;
+        }
+    }
+
+    .boxTxt1 {
+        width: auto;
+        height: 100%;
+        background-color: map-get($color, "primary3");
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: calc(3rem + 1vw);
+
+        h1 {
+            color: map-get($color, "white");
+            font-family: map-get($font, "alternative1");
+            font-size: map-get($fontSize, "heading2");
+            text-align: left;
+        }
+
+        .txt1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            position: relative;
+            right: 27px;
+
+            .btn1 {
+                color: map-get($color, "primary3");
+                background-color: map-get($color, "white");
+            }
+
+            img{
+                width: 38px;
+                height: auto;
+                color:white;
+                margin-left: 10px;
+            }
+        }
+    }
+}

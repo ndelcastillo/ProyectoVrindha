@@ -1,0 +1,47 @@
+.indexExperiencias {
+    width: 100%;
+
+    .row1 {
+        width: 100%;
+        height: 30vh;
+
+        .boxTxt1 {
+            width: auto;
+            height: 45vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: calc(3rem + 1vw);
+
+            h2 {
+                color: map-get($color, "grey100");
+                font-family: map-get($font, "headline");
+                font-size: map-get($fontSize, "heading2");
+                text-align: left;
+            }
+        }
+    }
+
+    .row2 {
+        width: 100%;
+        height: auto;
+
+
+    }
+
+    .row3 {
+        width: 100%;
+        height: auto;
+        
+        .boxLine {
+            margin: 80px 25% 50px 25%;
+
+            div {
+                border: 1px solid black;
+                filter: opacity(0.4);
+            }
+        }
+    }
+
+}

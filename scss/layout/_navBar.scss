@@ -1,23 +1,31 @@
+
+
+.container-fluid {
+    width: 100%;
+}
+
+//Porque no me lo agranda un 100%
+
 .indexHeader {
     background-color: map-get($color, "grey900");
     box-shadow: 0px 5px 20px lightgray;
+    width: 100%;
 
     nav {
         padding: 10px;
         height: auto;
         width: 100%;
 
-        .indexHeaderContainer {
-        }
+        .indexHeaderContainer {}
+
         .navbar-brand img {
-                height: auto;
-                width: 120px;
-            }
-
-        .navbar-troggler {
-
+            height: auto;
+            width: 120px;
         }
-        .navbar-collapse a{
+
+        .navbar-troggler {}
+
+        .navbar-collapse a {
             color: map-get($color, "black");
             font-family: map-get($font, "alternative1");
             font-size: map-get($fontSize, "paragraph");

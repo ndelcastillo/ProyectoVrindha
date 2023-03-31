@@ -19,8 +19,7 @@
             h2 {
                 color: map-get($color, "grey100");
                 font-family: map-get($font, "headline");
-                font-size: map-get($fontSize, "heading2");
-                text-align: left;
+                font-size: map-get($fontSize, "heading1.5");
             }
         }
     }
@@ -37,6 +36,12 @@
 
             img {
                 width: 100px;
+                transition: all 100ms linear;
+                transform: scale(1);
+
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
 
             h3 {
@@ -66,6 +71,12 @@
 
             img {
                 width: 100px;
+                transition: all 100ms linear;
+                transform: scale(1);
+
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
 
             h3 {
@@ -95,6 +106,12 @@
 
             img {
                 width: 100px;
+                transition: all 100ms linear;
+                transform: scale(1);
+
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
 
             h3 {
@@ -124,6 +141,12 @@
 
             img {
                 width: 100px;
+                transition: all 100ms linear;
+                transform: scale(1);
+
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
 
             h3 {
@@ -150,12 +173,32 @@
         width: 100%;
         height: auto;
 
-        .boxLine {
-            margin: 80px 25% 0 25%;
+        .boxImg {
+            width: 100%;
+            height: auto;
 
-            div {
-                border: 1px solid black;
-                filter: opacity(0.4);
+            img {
+                border-radius: 10PX;
+                width: 60%;
+                height: auto;
+            }
+        }
+    }
+    
+
+    .row4 {
+        width: 100%;
+        height: auto;
+
+        .boxLine {
+            width: 55%;
+            height: auto;
+            margin: 80px auto 0 auto;
+
+            img {
+                width: 100%;
+                height: auto;
+                filter: opacity(0.2);
             }
         }
     }

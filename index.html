@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Vrindha</title>
 </head>
@@ -32,12 +37,12 @@
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                 <div class="navbar-nav ms-auto">
-                                    <a class="nav-link me-5" href="#">¿Qué es?</a>
-                                    <a class="nav-link me-5" href="#">Método</a>
-                                    <a class="nav-link me-5" href="#">Equipo</a>
-                                    <a class="nav-link me-5" href="#">Técnicas</a>
-                                    <a class="nav-link me-5" href="#">Contacto</a>
-                                    <a class="nav-link " href="#">Usuario</a>
+                                    <a class="nav-link me-5" href="#vrindha">Vrindha</a>
+                                    <a class="nav-link me-5" href="#metodo">Método</a>
+                                    <a class="nav-link me-5" href="#equipo">Equipo</a>
+                                    <!-- <a class="nav-link me-5" href="#">Técnicas</a> -->
+                                    <a class="nav-link me-5 " href="#experiencias">Experiencias</a>
+                                    <a class="nav-link me-5" href="#contacto">Contacto</a>
                                 </div>
                             </div>
                         </div>
@@ -49,48 +54,55 @@
     <main class="indexMain">
         <div class="container-fluid g-0">
             <div class="row g-0">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-12">
                     <div class="boxTitle1">
                         <div>
-                            <h1>ACELERACION</h1>
-                            <div class="titleTxt1">
+                            <h1 class="mt-4 wow" data-aos="fade-right" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="1000">ACELERACIÓN
+                            </h1>
+                            <div class="titleTxt1" data-aos="fade-right" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-duration="1000">
                                 <h2 class="txt1">del</h2>
-                                <h2 class="txt2">PROPOSITO</h2>
+                                <h2 class="txt2">PROPÓSITO</h2>
                             </div>
-                            <div class="titleTxt2">
-                                <h3>La búsqueda y conexión con el propósito consiste en achicar la distancia
-                                    entre
-                                    mi
-                                    verdadera
-                                    esencia y aquello que estoy expresando y manifestando actualmente en mi
+                            <div class="titleTxt2 wow" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                                data-aos-delay="0" data-aos-offset="0" data-aos-duration="1000">
+                                <h3 class="d-none d-lg-block txt1">La búsqueda y conexión con el propósito consiste en
+                                    achicar la distancia
+                                    entre <span>mi
+                                        verdadera
+                                        esencia</span>
+                                    y aquello que estoy expresando y manifestando actualmente en mi
                                     vida.
                                 </h3>
+                                <h3 class="d-block d-lg-none txt2">Es mi verdadera escencia</h3>
                             </div>
-                            <button type="button" class="btn btn1">CONTACTARME</button>
+                            <button data-aos="fade-up" data-aos-duration="1000" type="button" class="btn btn1 mb-5"><a
+                                    href="#contacto">CONTACTARME</a></button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-12 d-none d-lg-block">
                     <div class="boxImg1">
                         <div>
-                            <img src="./assets/images/top/desierto.jpg" alt="">
+                            <img src="./assets/images/top/fondoInicio.png" alt="">
+                            <!-- <img src="./assets/images/inicio/PHOTO-2023-03-05-14-15-47.jpg" alt=""> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <main class="indexVrindha">
+    <main id="vrindha" class=" indexVrindha">
         <div class="container-fluid g-0">
             <div class="row g-0">
-                <div class="col-lg-5 col-6">
-                    <div class="boxImg1">
+                <div class="col-lg-5 col-12 d-none d-lg-block">
+                    <div class="boxImg1" data-aos="fade-right" data-aos-offset="0" data-aos-easing="ease-in-sine">
                         <img src="./assets/images/top/fiesta.jpg" alt="">
-
                     </div>
                 </div>
-                <div class="col-lg-7 col-6">
-                    <div class="boxTxt1">
+                <div class="col-lg-7 col-12">
+                    <div class="boxTxt1" data-aos="fade-left" data-aos-offset="0" data-aos-easing="ease-in-sine">
                         <h1>Vrindha</h1>
                         <p>
                             Somos un equipo cuya misión es ayudar a personas y organizaciones a expresar su
@@ -106,12 +118,12 @@
             </div>
         </div>
     </main>
-    <main class="indexMetodo">
+    <main id="metodo" class="indexMetodo">
         <div class="container-fluid g-0">
             <div class="row g-0 row1">
                 <div class="col-lg-12 col-12">
                     <div class="boxTxt1">
-                        <h2>Métodos</h2>
+                        <h2>Método</h2>
                     </div>
                 </div>
             </div>
@@ -121,7 +133,7 @@
                         <img src="./assets/icons/metodo/lecturaAstro.png" alt="">
                         <h3>Lectura</h3>
                         <div>
-                            <p>Lectura de la carta convencional y védica de una persona u organización.</p>
+                            <p>1. Realizar una síntesis del programa astrológico del consultante</p>
                         </div>
                     </div>
                 </div>
@@ -130,7 +142,7 @@
                         <img src="./assets/icons/metodo/identificacionAstro.png" alt="">
                         <h3>Identificación</h3>
                         <div>
-                            <p>Identificación de los tres patrones principales de la Carta</p>
+                            <p>2. Identificar y ecualizar los principales campos de conocimiento del consultante</p>
                         </div>
                     </div>
                 </div>
@@ -139,8 +151,7 @@
                         <img src="./assets/icons/metodo/musicAstro.png" alt="">
                         <h3>Armonización</h3>
                         <div>
-                            <p>Armonización de dichos patrones mediante el uso de música compuesta especialmente para
-                                ello, mantras y cristales</p>
+                            <p>3. Armonización del programa mediante ritmos y una secuencia de sonidos</p>
                         </div>
                     </div>
                 </div>
@@ -149,21 +160,28 @@
                         <img src="./assets/icons/metodo/seguimientoAstro.png" alt="">
                         <h3>Seguimiento</h3>
                         <div>
-                            <p>Seguimiento personalizado de los resultados a través del tiempo.</p>
+                            <p>4. Recapitulación de la sesión haciendo énfasis en los puntos claves</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row g-0 row3">
+            <!-- <div class="row g-0 p-5 row3">
+                <div class="col-lg-12 col-12">
+                    <div class="boxImg d-flex justify-content-center">
+                        <img src="./assets/images/metodo/peopleSMile.png" alt="">
+                    </div>
+                </div>
+            </div> -->
+            <div class="row g-0 row4">
                 <div class="col-lg-12 col-12">
                     <div class="boxLine">
-                        <div></div>
+                        <img src="./assets/images/tool/toolWave.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <main class="indexEquipo">
+    <main id="equipo" class="indexEquipo">
         <div class="container-fluid g-0">
             <div class="row g-0 row1">
                 <div class="col-lg-12 col-12">
@@ -174,153 +192,145 @@
             </div>
             <div class="row g-3 row2">
                 <div class="col-lg-4 col-12">
-                    <div class="boxImg1">
-                        <div class="img1">
-                            <img src="./assets/images/equipo/equipoAstrologo.png" alt="">
+                    <div class="boxEquipo1">
+                        <!-- inicio card -->
+                        <div class="card">
+                            <div class="face front">
+                                <img src="./assets/images/equipo/equipoAstrologo1.png" alt="">
+                                <!-- <h3>Lectura</h3> -->
+                            </div>
+                            <div class="face back">
+                                <img src="./assets/images/equipo/equipoTecnicaAstrologo.png" alt="">
+                                <!-- <h3>Lectura</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate mollitia eveniet
+                                    est</p>
+                                <div class="link">
+                                    <a href="">Details</a>
+                                </div> -->
+                            </div>
                         </div>
-                        <div class="txt1">
-                            <h3>Juan Perez</h3>
-                            <p>| Astrólogo</p>
-                        </div>
-                        <div class="txt2">
-                            <p>Lectura de la carta convencional y védica de una persona u organización.</p>
-                        </div>
-                        <div>
+                        <!-- fin card -->
+                        <div class="boxTxt1">
+                            <!-- <div class="img1">
+                            <img class="rounded" src="./assets/images/equipo/equipoAstrologo.png" alt="">
+                        </div> -->
+                            <div class="txt1">
+                                <h3>Juan Perez</h3>
+                                <p>| Astrólogo</p>
+                            </div>
+                            <div class="txt2">
+                                <p>En <span>Vrindha</span> me encargo de realizar la lectura de la carta convencional y
+                                    védica de una
+                                    persona u organización.</p>
+                            </div>
+                            <!-- <div>
                             <button type="button" class="btn btn1">CONTACTARME</button>
+                        </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-12">
-                    <div class="boxImg2">
-                        <div class="img1">
-                            <img src="./assets/images/equipo/equipoIngeniera.png" alt="">
+                    <div class="boxEquipo2">
+                        <!-- inicio card -->
+                        <div class="card">
+                            <div class="face front">
+                                <img src="./assets/images/equipo/equipoIngeniero1.png" alt="">
+                                <!-- <h3>Lectura</h3> -->
+                            </div>
+                            <div class="face back">
+                                <img src="./assets/images/equipo/equipoTecnicoIngeniero.png" alt="">
+                                <!-- <h3>Lectura</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate mollitia eveniet
+                                    est</p>
+                                <div class="link">
+                                    <a href="">Details</a>
+                                </div> -->
+                            </div>
                         </div>
-                        <div class="txt1">
-                            <h3>Adriana Rud</h3>
-                            <p>| Ingeniero</p>
-                        </div>
-                        <div class="txt2">
-                            <p>Lectura de la carta convencional y védica de una persona u organización.</p>
-                        </div>
-                        <div>
+                        <!-- fin card -->
+                        <div class="boxTxt1">
+                            <!-- <div class="img1">
+                            <img class="rounded" src="./assets/images/equipo/equipoAstrologo.png" alt="">
+                        </div> -->
+                            <div class="txt1">
+                                <h3>Adrian Rud</h3>
+                                <p>| Ingeniero</p>
+                            </div>
+                            <div class="txt2">
+                                <p>Mi rol en <span>Vrindha</span> es analizar las ondas y frecuencias de los sonidos que
+                                    grabamos y
+                                    lograr una pieza única que genere ciertos estímulos. </p>
+                            </div>
+                            <!-- <div>
                             <button type="button" class="btn btn1">CONTACTARME</button>
+                        </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-12">
-                    <div class="boxImg3">
-                        <div class="img1">
-                            <img src="./assets/images/equipo/equipoMusico.png" alt="">
+                    <div class="boxEquipo3">
+                        <!-- inicio card -->
+                        <div class="card">
+                            <div class="face front">
+                                <img src="./assets/images/equipo/equipoMusica.png" alt="">
+                                <!-- <h3>Lectura</h3> -->
+                            </div>
+                            <div class="face back">
+                                <img src="./assets/images/equipo/equipoTecnicaMusica.png" alt="">
+                                <!-- <h3>Lectura</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate mollitia eveniet
+                                    est</p>
+                                <div class="link">
+                                    <a href="">Details</a>
+                                </div> -->
+                            </div>
                         </div>
-                        <div class="txt1">
-                            <h3>Julio Coca</h3>
-                            <p>| Músico</p>
-                        </div>
-                        <div class="txt2">
-                            <p>Lectura de la carta convencional y védica de una persona u organización.</p>
-                        </div>
-                        <div>
+                        <!-- fin card -->
+                        <div class="boxTxt1">
+                            <!-- <div class="img1">
+                            <img class="rounded" src="./assets/images/equipo/equipoAstrologo.png" alt="">
+                        </div> -->
+                            <div class="txt1">
+                                <h3>Julia Martinez</h3>
+                                <p>| Músico</p>
+                            </div>
+                            <div class="txt2">
+                                <p>Soy un amante de la música y en <span>Vrindha</span> busco expresar mi escencia a
+                                    través de los
+                                    sonidos. Para eso uso instrumentos como el cuenco o la flauta. </p>
+                            </div>
+                            <!-- <div>
                             <button type="button" class="btn btn1">CONTACTARME</button>
+                        </div> -->
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row g-0 row3">
+            <!-- <div class="row g-0 row3">
                 <div class="col-lg-12 col-12">
                     <div class="boxLine">
-                        <div></div>
+                        <img src="./assets/images/tool/toolWave.png" alt="">
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </main>
-    <main class="indexTecnicas">
-        <div class="container-fluid g-0">
-            <div class="row g-0 row1">
-                <div class="col-lg-12 col-12">
-                    <div class="boxTxt1">
-                        <h2>Técnicas</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-0 row2">
-                <div class="col-lg-6 offset-lg-0 col-6">
-                    <div class="boxImg1">
-                        <img src="./assets/images/tecnicas/tecnicasCarta.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-5 col-6">
-                    <div class="boxTxt1">
-                        <div class="txt1">
-                            <h3>Julio Coca</h3>
-                            <p>| Músico</p>
-                        </div>
-                        <div class="txt2">
-                            <p>Lectura de la carta convencional y védica de una persona u organización.</p>
-                        </div>
-                        <div>
-                            <button type="button" class="btn btn1">CONTACTARME</button>
-                        </div>
-                    </div>
-                </div>
-            </div><br><br>
-            <div class="row g-0 row3">
-                <div class="col-lg-5 offset-lg-1  col-6">
-                    <div class="boxTxt1">
-                        <div class="txt1">
-                            <h3>Julio Coca</h3>
-                            <p>| Músico</p>
-                        </div>
-                        <div class="txt2">
-                            <p>Lectura de la carta convencional y védica de una persona u organización.</p>
-                        </div>
-                        <div>
-                            <button type="button" class="btn btn1">CONTACTARME</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-6">
-                    <div class="boxImg1">
-                        <img src="./assets/images/tecnicas/tecnicasDados.png" alt="">
-                    </div>
-                </div>
-            </div><br><br>
-            <div class="row g-0 row4">
-                <div class="col-lg-6 offset-lg-0 col-6">
-                    <div class="boxImg1">
-                        <img src="./assets/images/tecnicas/tecnicasMusica.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-5 col-6">
-                    <div class="boxTxt1">
-                        <div class="txt1">
-                            <h3>Julio Coca</h3>
-                            <p>| Músico</p>
-                        </div>
-                        <div class="txt2">
-                            <p>Lectura de la carta convencional y védica de una persona u organización.</p>
-                        </div>
-                        <div>
-                            <button type="button" class="btn btn1">CONTACTARME</button>
-                        </div>
-                    </div>
-                </div>
-            </div><br><br>
-        </div>
-    </main>
-    <main class="indexKendra">
+    <main id="kendra" class="indexKendra">
         <div class="container-fluid g-0">
             <div class="row g-0">
-                <div class="col-lg-7 col-6">
+                <div class="col-lg-7 col-12 wow" data-aos="fade-right" data-aos-offset="0"
+                    data-aos-easing="ease-in-sine">
                     <div class="boxTxt1">
                         <h1>Sonido Kendra</h1>
                         <div class="txt1">
-                            <button type="button" class="btn btn1">ESCUCHAR</button>
+                            <button type="button" class="btn btn1"><a
+                                    href="https://open.spotify.com/artist/3Bpgd2YxqSOLYpit94nFfz?si=sirfw2bCRdCPeg4IIqoLmQ"
+                                    target="_blank">ESCUCHAR</a></button>
                             <img src="./assets/icons/kendra/iconSpotify.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-6">
+                <div class="col-lg-5 col-12" data-aos="fade-left" data-aos-offset="0" data-aos-easing="ease-in-sine">
                     <div class="boxImg1">
                         <img src="./assets/images/top/agua.jpg" alt="">
                     </div>
@@ -328,7 +338,7 @@
             </div>
         </div>
     </main>
-    <main class="indexExperiencias">
+    <main id="experiencias" class="indexExperiencias">
         <div class="container-fluid g-0">
             <div class="row g-0 row1">
                 <div class="col-lg-12 col-12">
@@ -338,62 +348,306 @@
                 </div>
             </div>
             <div class="row g-0 row2">
-                <div class="col-lg-8 col-center m-auto">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="item carousel-item active">
-                                <div class="img-box"><img src="./assets/images/experiencias/1670276961798.jpeg" alt="">
+                <div class="col-lg-12 col-12">
+                    <section class="container">
+                        <div class="testimonials">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="single-item">
+                                            <div class="row">
+                                                <div class="col-lg-5">
+                                                    <div class="profile">
+                                                        <div class="img-area">
+                                                            <img src="./assets/images/experiencias/mariaColeman.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="bio">
+                                                            <h1>@MariaColeman</h1>
+                                                            <!-- <h4>Psicologo</h4> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="content">
+                                                        <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum
+                                                            dolor sit amet, consectetur adipisicing elit. Quibusdam rem
+                                                            ratione deleniti libero consectetur exercitationem veniam
+                                                            illo obcaecati quaerat quas, eius reprehenderit accusamus
+                                                            adipisci iusto totam, quae cupiditate quia a!
+                                                            Quas ullam incidunt quos eius quo eum doloribus enim
+                                                            dolorem, quia laboriosam similique nihil nisi reiciendis
+                                                            veritatis amet esse magni molestiae sapiente eveniet
+                                                            cupiditate. Pariatur officia maiores magni et vel.</p>
+                                                        <!-- <p class="socials">
+                                                            <i class="fa fa-twitter"></i>
+                                                            <i class="fa fa-behance"></i>
+                                                            <i class="fa fa-youtube"></i>
+                                                            <i class="fa fa-dribble"></i>
+                                                        </p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="single-item">
+                                            <div class="row">
+                                                <div class="col-lg-5">
+                                                    <div class="profile">
+                                                        <div class="img-area">
+                                                            <img src="./assets/images/experiencias/pedroEcheverria.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="bio">
+                                                            <h1>@PedroEcheverria</h1>
+                                                            <!-- <h4>Psicologo</h4> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="content">
+                                                        <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum
+                                                            dolor sit amet, consectetur adipisicing elit. Quibusdam rem
+                                                            ratione deleniti libero consectetur exercitationem veniam
+                                                            illo obcaecati quaerat quas, eius reprehenderit accusamus
+                                                            adipisci iusto totam, quae cupiditate quia a!
+                                                            Quas ullam incidunt quos eius quo eum doloribus enim
+                                                            dolorem, quia laboriosam similique nihil nisi reiciendis
+                                                            veritatis amet esse magni molestiae sapiente eveniet
+                                                            cupiditate. Pariatur officia maiores magni et vel.</p>
+                                                        <!-- <p class="socials">
+                                                            <i class="fa fa-twitter"></i>
+                                                            <i class="fa fa-behance"></i>
+                                                            <i class="fa fa-youtube"></i>
+                                                            <i class="fa fa-dribble"></i>
+                                                        </p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="single-item">
+                                            <div class="row">
+                                                <div class="col-lg-5">
+                                                    <div class="profile">
+                                                        <div class="img-area">
+                                                            <img src="./assets/images/experiencias/juliaCol.jpg" alt="">
+                                                        </div>
+                                                        <div class="bio">
+                                                            <h1>@JuliaCol</h1>
+                                                            <!-- <h4>Psicologo</h4> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="content">
+                                                        <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum
+                                                            dolor sit amet, consectetur adipisicing elit. Quibusdam rem
+                                                            ratione deleniti libero consectetur exercitationem veniam
+                                                            illo obcaecati quaerat quas, eius reprehenderit accusamus
+                                                            adipisci iusto totam, quae cupiditate quia a!
+                                                            Quas ullam incidunt quos eius quo eum doloribus enim
+                                                            dolorem, quia laboriosam similique nihil nisi reiciendis
+                                                            veritatis amet esse magni molestiae sapiente eveniet
+                                                            cupiditate. Pariatur officia maiores magni et vel.</p>
+                                                        <!-- <p class="socials">
+                                                            <i class="fa fa-twitter"></i>
+                                                            <i class="fa fa-behance"></i>
+                                                            <i class="fa fa-youtube"></i>
+                                                            <i class="fa fa-dribble"></i>
+                                                        </p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExample" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExample" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
-                                <p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                                    optio officia aliquid at aperiam perferendis. Voluptas sint perferendis sapiente
-                                    adipisci molestias. Voluptatem enim odio autem sapiente unde dolore excepturi
-                                    tenetur.</p>
-                                <p class="overview"><b>Alonso Porter</b>carta natal</p>
                             </div>
-                            <div class="item carousel-item ">
-                                <div class="img-box"><img src="./assets/images/experiencias/1670276961798.jpeg" alt="">
-                                </div>
-                                <p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                                    optio officia aliquid at aperiam perferendis. Voluptas sint perferendis sapiente
-                                    adipisci molestias. Voluptatem enim odio autem sapiente unde dolore excepturi
-                                    tenetur.</p>
-                                <p class="overview"><b>Alonso Porter</b>carta natal</p>
-                            </div>
-                            <div class="item carousel-item ">
-                                <div class="img-box"><img src="./assets/images/experiencias/1670276961798.jpeg" alt="">
-                                </div>
-                                <p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                                    optio officia aliquid at aperiam perferendis. Voluptas sint perferendis sapiente
-                                    adipisci molestias. Voluptatem enim odio autem sapiente unde dolore excepturi
-                                    tenetur.</p>
-                                <p class="overview"><b>Alonso Porter</b>carta natal</p>
-                            </div>
-                        </div>
-                        <a class="carousel-control left carousel-control-prev" href="myCarousel" data-slide="prev">
-                            <i class="fa fa-angle-left"></i>
-                        </a>
-                        <a class="carousel-control right carousel-control-prev" href="myCarousel" data-slide="prev">
-                            <i class="fa fa-angle-right"></i>
-                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0 row3">
+            <div class="col-lg-12 col-12">
+                <div class="boxLine">
+                    <img src="./assets/images/tool/toolWave.png" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <main id="contacto" class="indexContacto">
+        <div class="container-fluid g-0">
+            <div class="row g-0 row1">
+                <div class="col-lg-12 col-12">
+                    <div class="boxTxt1">
+                        <h2>Contacto</h2>
                     </div>
                 </div>
             </div>
-            <div class="row g-0 row3">
-                <div class="col-lg-12 col-12">
-                    <div class="boxLine">
-                        <div></div>
+            <div class="row g-0 row2">
+                <div class="col-lg-5 offset-lg-1 d-none d-lg-block wow" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <div class="boxImg1">
+                        <img src="./assets/images/top/desierto.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5 wow" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="boxForm1">
+                        <div class="boxTxt1">
+                            <h2>Identifica tu propósito y exprésalo con ayuda de Vrindha</h2>
+                        </div>
+                        <form class="row">
+                            <div class="col-lg-12 mt-3 mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="name" class="form-control" id="name">
+                            </div>
+                            <div class="col-lg-12 mb-2">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div> -->
+                            </div>
+                            <div class="col-lg-12 mb-3 ms-4 text-secondary form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1"><small
+                                        class="text-body-secondary">Quiero recibir novedades de
+                                        Vrindha</small></label>
+                            </div>
+                            <!-- <div class="col-lg-6 mb-3">
+                                <label for="surname" class="form-label">Apellido</label>
+                                <input type="surname" class="form-control" id="surname">
+                            </div> -->
+                            <div class="col-lg-12 mb-3">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="phone" class="form-control " id="phone">
+                            </div>
+                            <div class="col-lg-12 mb-4">
+                                <!-- <label for="subject" class="form-label">Asunto</label>
+                                <input type="subject" class="form-control " id="subject"> -->
+                                <!-- <label for="exampleDataList" class="form-label">Datalist example</label>
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="Type to search...">
+                                <datalist id="datalistOptions">
+                                    <option value="San Francisco">
+                                    <option value="New York">
+                                    <option value="Seattle">
+                                    <option value="Los Angeles">
+                                    <option value="Chicago">
+                                </datalist> -->
+                                <label for="tecnics" class="form-label">La consulta es para:</label>
+                                <select class="form-select form-select-md" aria-label="Default select example">
+                                    <option selected>Elegir </option>
+                                    <option value="1">Persona</option>
+                                    <option value="2">Empresa</option>
+                                    <option value="3">Otro</option>
+                                </select>
+                                <!-- <label for="floatingSelect">Works with selects</label> -->
+                            </div>
+                            <div class="col-lg-12 mb-4">
+                                <!-- <label for="question" class="form-label">Escriba su consulta aquí</label>
+                                <input type="question" class="form-control" id="question"> -->
+                                <!-- <label for="question" class="form-label">Comentario</label> -->
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2">Comentario</label>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-2 ms-4 form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Lectura</label>
+                            </div>
+                            <div class="col-lg-2 form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Identificación</label>
+                            </div>
+                            <div class="col-lg-2 ms-5 form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"
+                                    >
+                                <label class="form-check-label" for="inlineCheckbox3">Armonización</label>
+                            </div>
+                            <div class="col-lg-2 ms-4 mb-5 form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3"
+                                    >
+                                <label class="form-check-label" for="inlineCheckbox3">Seguimiento</label>
+                            </div> -->
+                            <div class="boxBtn1">
+                                <button type="submit" class="btn btn1">Enviar</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="indexFooter">
+        <div class="container-fluid g-0">
+            <div class="row g-0 row1">
+                <div class="col-lg-6">
+                    <div class="boxTxt1">
+                        <p>hola@vrindha.com</p>
+                        <i>© Vrindha. Buenos Aires, Argentina, 2023.</i>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="boxTxt2">
+                        <p>+54 9 11 41986577</p>
+                        <p>logosRedesSociales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
 
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

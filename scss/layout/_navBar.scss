@@ -1,5 +1,3 @@
-
-
 .container-fluid {
     width: 100%;
 }
@@ -16,19 +14,19 @@
         height: auto;
         width: 100%;
 
-        .indexHeaderContainer {}
-
         .navbar-brand img {
             height: auto;
             width: 120px;
         }
 
-        .navbar-troggler {}
-
         .navbar-collapse a {
             color: map-get($color, "black");
             font-family: map-get($font, "alternative1");
             font-size: map-get($fontSize, "paragraph");
+
+            &:hover {
+                color: map-get($color, "primary3");
+            }
         }
     }
 }

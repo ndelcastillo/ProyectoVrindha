@@ -1,0 +1,47 @@
+.indexFooter {
+    background-color: map-get($color, "grey100");
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+
+    .row1 {
+        padding: 90px;
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .boxTxt1{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: left;
+
+            p{
+                color: map-get($color, "grey900");
+                font-family: map-get($font, "alternative1");
+                font-size: calc(0.5rem + 0.5vw);
+            }
+
+            i{
+                color: map-get($color, "grey900");
+                font-family: map-get($font, "alternative1");
+                font-size: calc(0.5rem + 0.5vw);
+            }
+        }
+        .boxTxt2{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: end;
+
+            p{
+                color: map-get($color, "grey900");
+                font-family: map-get($font, "alternative1");
+                font-size: calc(0.5rem + 0.5vw);
+            }
+        }
+    }
+}

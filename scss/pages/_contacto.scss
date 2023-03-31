@@ -1,0 +1,78 @@
+.indexContacto {
+    height: auto;
+    width: 100%;
+    // margin-top: 100px;
+
+    .row1 {
+        width: 100%;
+        height: 30vh;
+
+        .boxTxt1 {
+            width: auto;
+            height: 45vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: calc(3rem + 1vw);
+
+            h2 {
+                color: map-get($color, "grey100");
+                font-family: map-get($font, "headline");
+                font-size: map-get($fontSize, "heading1.5");
+            }
+        }
+    }
+
+    .row2 {
+        height: auto;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .boxImg1 {
+            img {
+                width: 100%;
+                height: 100vh;
+            }
+        }
+
+        .boxForm1 {
+            width: 100%;
+            height: 100%;
+            background-color: map-get($color, "grey900");
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            padding: calc(3rem + 1vw);
+
+            .boxTxt1 {
+                h2 {
+                    color: map-get($color, "primary3");
+                    font-family: map-get($font, "alternative1");
+                    font-size: map-get($fontSize, "heading3");
+                    // margin-bottom: 40px;
+                }
+            }
+
+            .boxBtn1 {
+                display: flex;
+                justify-content: center;
+
+                .btn1 {
+                    color: map-get($color, "white");
+                    background-color: map-get($color, "primary3");
+                    // padding:map-get($btnSize , "small" );
+                    font-size: map-get($btnFontSize, "medium");
+                    width: 100%;
+
+                    &:hover{
+                        color: map-get($color, "white");
+                        background-color: map-get($color, "secondary1");
+                    }
+                }
+            }
+        }
+    }
+}

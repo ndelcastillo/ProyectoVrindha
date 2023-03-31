@@ -34,6 +34,14 @@
 @import 'pages/metodo';
 @import 'pages/tecnicas';
 
+// queries
+@import 'queries/contacto';
+@import 'queries/equipo';
+@import 'queries/experiencias';
+@import 'queries/index';
+@import 'queries/kendra';
+@import 'queries/metodo';
+@import 'queries/tecnicas';
 
 //========== SASS-BOOTSTRAP ==========//
 // // Custom.scss
@@ -81,3 +89,4 @@
 // Default variable overrides
 $body-bg: #000;
 $body-color: #111;
+

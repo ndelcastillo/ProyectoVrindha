@@ -40,6 +40,16 @@
             .btn1 {
                 color: map-get($color, "primary3");
                 background-color: map-get($color, "white");
+
+                &:hover{
+                    color: map-get($color, "white");
+                    background-color: map-get($color, "secondary1");
+                }
+
+                a{
+                    text-decoration: none;
+                    color: map-get($color, "primary3");
+                }
             }
 
             img{

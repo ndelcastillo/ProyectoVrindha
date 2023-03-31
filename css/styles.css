@@ -19,6 +19,42 @@
 .selector-for-some-widget {
   box-sizing: content-box; }
 
+.indexFooter {
+  background-color: #322800;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  box-shadow: 0px 5px 20px black; }
+  .indexFooter .row1 {
+    padding: 90px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .indexFooter .row1 .boxTxt1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: left; }
+      .indexFooter .row1 .boxTxt1 p {
+        color: #F2F2F2;
+        font-family: "ABeeZee";
+        font-size: calc(0.5rem + 0.5vw); }
+      .indexFooter .row1 .boxTxt1 i {
+        color: #F2F2F2;
+        font-family: "ABeeZee";
+        font-size: calc(0.5rem + 0.5vw); }
+    .indexFooter .row1 .boxTxt2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: end; }
+      .indexFooter .row1 .boxTxt2 p {
+        color: #F2F2F2;
+        font-family: "ABeeZee";
+        font-size: calc(0.5rem + 0.5vw); }
+
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   width: 100%; }
 
@@ -37,6 +73,59 @@
       color: #000000;
       font-family: "ABeeZee";
       font-size: 1rem; }
+      .indexHeader nav .navbar-collapse a:hover {
+        color: #C49E00; }
+
+.indexContacto {
+  height: auto;
+  width: 100%; }
+  .indexContacto .row1 {
+    width: 100%;
+    height: 30vh; }
+    .indexContacto .row1 .boxTxt1 {
+      width: auto;
+      height: 45vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: calc(3rem + 1vw); }
+      .indexContacto .row1 .boxTxt1 h2, .indexContacto .row1 .boxTxt1 .h2 {
+        color: #322800;
+        font-family: "Lancelot";
+        font-size: 2.5rem; }
+  .indexContacto .row2 {
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .indexContacto .row2 .boxImg1 img {
+      width: 100%;
+      height: 100vh; }
+    .indexContacto .row2 .boxForm1 {
+      width: 100%;
+      height: 100%;
+      background-color: #F2F2F2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      padding: calc(3rem + 1vw); }
+      .indexContacto .row2 .boxForm1 .boxTxt1 h2, .indexContacto .row2 .boxForm1 .boxTxt1 .h2 {
+        color: #C49E00;
+        font-family: "ABeeZee";
+        font-size: 1.5rem; }
+      .indexContacto .row2 .boxForm1 .boxBtn1 {
+        display: flex;
+        justify-content: center; }
+        .indexContacto .row2 .boxForm1 .boxBtn1 .btn1 {
+          color: #ffffff;
+          background-color: #C49E00;
+          font-size: 1rem;
+          width: 100%; }
+          .indexContacto .row2 .boxForm1 .boxBtn1 .btn1:hover {
+            color: #ffffff;
+            background-color: #8C2D7C; }
 
 .indexEquipo {
   width: 100%; }
@@ -54,136 +143,331 @@
       .indexEquipo .row1 .boxTxt1 h2, .indexEquipo .row1 .boxTxt1 .h2 {
         color: #322800;
         font-family: "Lancelot";
-        font-size: 2rem;
-        text-align: left; }
+        font-size: 2.5rem; }
   .indexEquipo .row2 {
     width: 100%;
-    height: auto; }
-    .indexEquipo .row2 .boxImg1 {
+    height: 100%; }
+    .indexEquipo .row2 .boxEquipo1 {
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .indexEquipo .row2 .boxImg1 .img1 {
+      .indexEquipo .row2 .boxEquipo1 .card {
+        position: relative;
         width: 300px;
-        height: auto; }
-        .indexEquipo .row2 .boxImg1 .img1 img {
-          width: 100%;
-          height: auto; }
-      .indexEquipo .row2 .boxImg1 .txt1 {
+        height: 350px; }
+      .indexEquipo .row2 .boxEquipo1 .card .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .indexEquipo .row2 .boxEquipo1 .card .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .indexEquipo .row2 .boxEquipo1 .card .front img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .indexEquipo .row2 .boxEquipo1 .card .front h3, .indexEquipo .row2 .boxEquipo1 .card .front .h3 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: white;
+        background: rgba(0, 0, 0, 0.4);
+        text-align: center; }
+      .indexEquipo .row2 .boxEquipo1 .card .back {
+        transform: perspective(600px) rotateY(180deg);
+        background: #032336;
+        color: #f3f3f3;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center; }
+      .indexEquipo .row2 .boxEquipo1 .card .back img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5; }
+      .indexEquipo .row2 .boxEquipo1 .card .back .link {
+        border-top: solid 1px #f3f3f3;
+        height: 50px;
+        line-height: 50px; }
+      .indexEquipo .row2 .boxEquipo1 .card .back .link a {
+        color: #f3f3f3; }
+      .indexEquipo .row2 .boxEquipo1 .card .back h3, .indexEquipo .row2 .boxEquipo1 .card .back .h3 {
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 2px; }
+      .indexEquipo .row2 .boxEquipo1 .card .back p {
+        letter-spacing: 1px; }
+      .indexEquipo .row2 .boxEquipo1 .card:hover .front {
+        transform: perspective(600px) rotateY(180deg); }
+      .indexEquipo .row2 .boxEquipo1 .card:hover .back {
+        transform: perspective(600px) rotateY(360deg); }
+      .indexEquipo .row2 .boxEquipo1 .boxTxt1 {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        margin-top: 20px; }
-        .indexEquipo .row2 .boxImg1 .txt1 h3, .indexEquipo .row2 .boxImg1 .txt1 .h3 {
-          color: #C49E00;
-          font-family: "ABeeZee";
-          font-size: calc(0.5rem + 0.5vw); }
-        .indexEquipo .row2 .boxImg1 .txt1 p {
-          color: #000000;
-          font-family: "ABeeZee";
-          font-size: calc(0.3rem + 0.5vw);
-          margin-left: 5px;
-          position: relative;
-          top: 4px; }
-      .indexEquipo .row2 .boxImg1 .txt2 {
-        text-align: center;
-        width: 60%;
-        margin-top: 10px; }
-        .indexEquipo .row2 .boxImg1 .txt2 p {
-          color: #000000;
-          font-family: "ABeeZee";
-          font-size: calc(0.5rem + 0.5vw); }
-      .indexEquipo .row2 .boxImg1 .btn1 {
-        color: #ffffff;
-        background-color: #C49E00; }
-    .indexEquipo .row2 .boxImg2 {
+        align-items: center; }
+        .indexEquipo .row2 .boxEquipo1 .boxTxt1 .img1 {
+          width: 300px;
+          height: auto; }
+          .indexEquipo .row2 .boxEquipo1 .boxTxt1 .img1 img {
+            width: 100%;
+            height: auto; }
+        .indexEquipo .row2 .boxEquipo1 .boxTxt1 .txt1 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px; }
+          .indexEquipo .row2 .boxEquipo1 .boxTxt1 .txt1 h3, .indexEquipo .row2 .boxEquipo1 .boxTxt1 .txt1 .h3 {
+            color: #C49E00;
+            font-family: "ABeeZee";
+            font-size: calc(0.5rem + 0.5vw); }
+          .indexEquipo .row2 .boxEquipo1 .boxTxt1 .txt1 p {
+            color: #000000;
+            font-family: "ABeeZee";
+            font-size: calc(0.3rem + 0.5vw);
+            margin-left: 5px;
+            position: relative;
+            top: 4px; }
+        .indexEquipo .row2 .boxEquipo1 .boxTxt1 .txt2 {
+          text-align: center;
+          width: 60%;
+          margin-top: 10px; }
+          .indexEquipo .row2 .boxEquipo1 .boxTxt1 .txt2 p {
+            color: #000000;
+            font-family: "ABeeZee";
+            font-size: calc(0.5rem + 0.5vw); }
+        .indexEquipo .row2 .boxEquipo1 .boxTxt1 .btn1 {
+          color: #ffffff;
+          background-color: #C49E00;
+          font-size: 1rem; }
+    .indexEquipo .row2 .boxEquipo2 {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .indexEquipo .row2 .boxImg2 .img1 {
+      .indexEquipo .row2 .boxEquipo2 .card {
+        position: relative;
         width: 300px;
-        height: auto; }
-        .indexEquipo .row2 .boxImg2 .img1 img {
-          width: 100%;
-          height: auto; }
-      .indexEquipo .row2 .boxImg2 .txt1 {
+        height: 350px; }
+      .indexEquipo .row2 .boxEquipo2 .card .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .indexEquipo .row2 .boxEquipo2 .card .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .indexEquipo .row2 .boxEquipo2 .card .front img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .indexEquipo .row2 .boxEquipo2 .card .front h3, .indexEquipo .row2 .boxEquipo2 .card .front .h3 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: white;
+        background: rgba(0, 0, 0, 0.4);
+        text-align: center; }
+      .indexEquipo .row2 .boxEquipo2 .card .back {
+        transform: perspective(600px) rotateY(180deg);
+        background: #032336;
+        color: #f3f3f3;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center; }
+      .indexEquipo .row2 .boxEquipo2 .card .back img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5; }
+      .indexEquipo .row2 .boxEquipo2 .card .back .link {
+        border-top: solid 1px #f3f3f3;
+        height: 50px;
+        line-height: 50px; }
+      .indexEquipo .row2 .boxEquipo2 .card .back .link a {
+        color: #f3f3f3; }
+      .indexEquipo .row2 .boxEquipo2 .card .back h3, .indexEquipo .row2 .boxEquipo2 .card .back .h3 {
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 2px; }
+      .indexEquipo .row2 .boxEquipo2 .card .back p {
+        letter-spacing: 1px; }
+      .indexEquipo .row2 .boxEquipo2 .card:hover .front {
+        transform: perspective(600px) rotateY(180deg); }
+      .indexEquipo .row2 .boxEquipo2 .card:hover .back {
+        transform: perspective(600px) rotateY(360deg); }
+      .indexEquipo .row2 .boxEquipo2 .boxTxt1 {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        margin-top: 20px; }
-        .indexEquipo .row2 .boxImg2 .txt1 h3, .indexEquipo .row2 .boxImg2 .txt1 .h3 {
-          color: #C49E00;
-          font-family: "ABeeZee";
-          font-size: calc(0.5rem + 0.5vw); }
-        .indexEquipo .row2 .boxImg2 .txt1 p {
-          color: #000000;
-          font-family: "ABeeZee";
-          font-size: calc(0.3rem + 0.5vw);
-          margin-left: 5px;
-          position: relative;
-          top: 4px; }
-      .indexEquipo .row2 .boxImg2 .txt2 {
-        text-align: center;
-        width: 60%;
-        margin-top: 10px; }
-        .indexEquipo .row2 .boxImg2 .txt2 p {
-          color: #000000;
-          font-family: "ABeeZee";
-          font-size: calc(0.5rem + 0.5vw); }
-      .indexEquipo .row2 .boxImg2 .btn1 {
-        color: #ffffff;
-        background-color: #C49E00; }
-    .indexEquipo .row2 .boxImg3 {
+        align-items: center; }
+        .indexEquipo .row2 .boxEquipo2 .boxTxt1 .img1 {
+          width: 300px;
+          height: auto; }
+          .indexEquipo .row2 .boxEquipo2 .boxTxt1 .img1 img {
+            width: 100%;
+            height: auto; }
+        .indexEquipo .row2 .boxEquipo2 .boxTxt1 .txt1 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px; }
+          .indexEquipo .row2 .boxEquipo2 .boxTxt1 .txt1 h3, .indexEquipo .row2 .boxEquipo2 .boxTxt1 .txt1 .h3 {
+            color: #C49E00;
+            font-family: "ABeeZee";
+            font-size: calc(0.5rem + 0.5vw); }
+          .indexEquipo .row2 .boxEquipo2 .boxTxt1 .txt1 p {
+            color: #000000;
+            font-family: "ABeeZee";
+            font-size: calc(0.3rem + 0.5vw);
+            margin-left: 5px;
+            position: relative;
+            top: 4px; }
+        .indexEquipo .row2 .boxEquipo2 .boxTxt1 .txt2 {
+          text-align: center;
+          width: 60%;
+          margin-top: 10px; }
+          .indexEquipo .row2 .boxEquipo2 .boxTxt1 .txt2 p {
+            color: #000000;
+            font-family: "ABeeZee";
+            font-size: calc(0.5rem + 0.5vw); }
+        .indexEquipo .row2 .boxEquipo2 .boxTxt1 .btn1 {
+          color: #ffffff;
+          background-color: #C49E00;
+          font-size: 1rem; }
+    .indexEquipo .row2 .boxEquipo3 {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .indexEquipo .row2 .boxImg3 .img1 {
+      .indexEquipo .row2 .boxEquipo3 .card {
+        position: relative;
         width: 300px;
-        height: auto; }
-        .indexEquipo .row2 .boxImg3 .img1 img {
-          width: 100%;
-          height: auto; }
-      .indexEquipo .row2 .boxImg3 .txt1 {
+        height: 350px; }
+      .indexEquipo .row2 .boxEquipo3 .card .face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .5s; }
+      .indexEquipo .row2 .boxEquipo3 .card .front {
+        transform: perspective(600px) rotateY(0deg); }
+      .indexEquipo .row2 .boxEquipo3 .card .front img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .indexEquipo .row2 .boxEquipo3 .card .front h3, .indexEquipo .row2 .boxEquipo3 .card .front .h3 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: white;
+        background: rgba(0, 0, 0, 0.4);
+        text-align: center; }
+      .indexEquipo .row2 .boxEquipo3 .card .back {
+        transform: perspective(600px) rotateY(180deg);
+        background: #032336;
+        color: #f3f3f3;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center; }
+      .indexEquipo .row2 .boxEquipo3 .card .back img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5; }
+      .indexEquipo .row2 .boxEquipo3 .card .back .link {
+        border-top: solid 1px #f3f3f3;
+        height: 50px;
+        line-height: 50px; }
+      .indexEquipo .row2 .boxEquipo3 .card .back .link a {
+        color: #f3f3f3; }
+      .indexEquipo .row2 .boxEquipo3 .card .back h3, .indexEquipo .row2 .boxEquipo3 .card .back .h3 {
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 2px; }
+      .indexEquipo .row2 .boxEquipo3 .card .back p {
+        letter-spacing: 1px; }
+      .indexEquipo .row2 .boxEquipo3 .card:hover .front {
+        transform: perspective(600px) rotateY(180deg); }
+      .indexEquipo .row2 .boxEquipo3 .card:hover .back {
+        transform: perspective(600px) rotateY(360deg); }
+      .indexEquipo .row2 .boxEquipo3 .boxTxt1 {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        margin-top: 20px; }
-        .indexEquipo .row2 .boxImg3 .txt1 h3, .indexEquipo .row2 .boxImg3 .txt1 .h3 {
-          color: #C49E00;
-          font-family: "ABeeZee";
-          font-size: calc(0.5rem + 0.5vw); }
-        .indexEquipo .row2 .boxImg3 .txt1 p {
-          color: #000000;
-          font-family: "ABeeZee";
-          font-size: calc(0.3rem + 0.5vw);
-          margin-left: 5px;
-          position: relative;
-          top: 4px; }
-      .indexEquipo .row2 .boxImg3 .txt2 {
-        text-align: center;
-        width: 60%;
-        margin-top: 10px; }
-        .indexEquipo .row2 .boxImg3 .txt2 p {
-          color: #000000;
-          font-family: "ABeeZee";
-          font-size: calc(0.5rem + 0.5vw); }
-      .indexEquipo .row2 .boxImg3 .btn1 {
-        color: #ffffff;
-        background-color: #C49E00; }
-  .indexEquipo .row3 {
-    width: 100%;
-    height: auto; }
-    .indexEquipo .row3 .boxLine {
-      margin: 80px 25% 0 25%; }
-      .indexEquipo .row3 .boxLine div {
-        border: 1px solid black;
-        filter: opacity(0.4); }
+        align-items: center; }
+        .indexEquipo .row2 .boxEquipo3 .boxTxt1 .img1 {
+          width: 300px;
+          height: auto; }
+          .indexEquipo .row2 .boxEquipo3 .boxTxt1 .img1 img {
+            width: 100%;
+            height: auto; }
+        .indexEquipo .row2 .boxEquipo3 .boxTxt1 .txt1 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px; }
+          .indexEquipo .row2 .boxEquipo3 .boxTxt1 .txt1 h3, .indexEquipo .row2 .boxEquipo3 .boxTxt1 .txt1 .h3 {
+            color: #C49E00;
+            font-family: "ABeeZee";
+            font-size: calc(0.5rem + 0.5vw); }
+          .indexEquipo .row2 .boxEquipo3 .boxTxt1 .txt1 p {
+            color: #000000;
+            font-family: "ABeeZee";
+            font-size: calc(0.3rem + 0.5vw);
+            margin-left: 5px;
+            position: relative;
+            top: 4px; }
+        .indexEquipo .row2 .boxEquipo3 .boxTxt1 .txt2 {
+          text-align: center;
+          width: 60%;
+          margin-top: 10px; }
+          .indexEquipo .row2 .boxEquipo3 .boxTxt1 .txt2 p {
+            color: #000000;
+            font-family: "ABeeZee";
+            font-size: calc(0.5rem + 0.5vw); }
+        .indexEquipo .row2 .boxEquipo3 .boxTxt1 .btn1 {
+          color: #ffffff;
+          background-color: #C49E00;
+          font-size: 1rem; }
+    .indexEquipo .row2 .row3 {
+      width: 100%;
+      height: auto; }
+      .indexEquipo .row2 .row3 .boxLine {
+        width: 55%;
+        height: auto;
+        margin: 80px auto 0 auto; }
+        .indexEquipo .row2 .row3 .boxLine img {
+          width: 100%;
+          height: auto;
+          filter: opacity(0.6); }
 
 .indexExperiencias {
   width: 100%; }
@@ -201,54 +485,101 @@
       .indexExperiencias .row1 .boxTxt1 h2, .indexExperiencias .row1 .boxTxt1 .h2 {
         color: #322800;
         font-family: "Lancelot";
-        font-size: 2rem;
-        text-align: left; }
+        font-size: 2.5rem; }
   .indexExperiencias .row2 {
     width: 100%;
-    height: auto; }
+    height: 100%; }
+    .indexExperiencias .row2 section {
+      display: grid;
+      place-items: center;
+      height: auto; }
+      .indexExperiencias .row2 section .testimonials {
+        max-width: 1800px;
+        padding: 0 15px 50px;
+        margin: 0 auto 0 auto; }
+        .indexExperiencias .row2 section .testimonials .single-item {
+          background-color: #C49E00;
+          color: black;
+          padding: 15px;
+          border-radius: 10px; }
+          .indexExperiencias .row2 section .testimonials .single-item .profile {
+            margin-bottom: 30px;
+            text-align: center; }
+            .indexExperiencias .row2 section .testimonials .single-item .profile .img-area {
+              margin: 5px 0 15px 15px; }
+              .indexExperiencias .row2 section .testimonials .single-item .profile .img-area img {
+                margin-top: 30px;
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                border: 7px solid;
+                border-color: #ffffff; }
+            .indexExperiencias .row2 section .testimonials .single-item .profile .bio h1, .indexExperiencias .row2 section .testimonials .single-item .profile .bio .h1 {
+              color: #ffffff;
+              font-family: "ABeeZee";
+              font-size: calc(1rem + 0.5vw); }
+            .indexExperiencias .row2 section .testimonials .single-item .profile .bio h4, .indexExperiencias .row2 section .testimonials .single-item .profile .bio .h4 {
+              font-family: 'Courier New', Courier, monospace; }
+          .indexExperiencias .row2 section .testimonials .single-item .content {
+            padding: 20px 20px 20px 20px; }
+            .indexExperiencias .row2 section .testimonials .single-item .content p {
+              text-align: justify;
+              color: #ffffff;
+              font-family: "ABeeZee";
+              font-size: calc(0.5rem + 0.5vw);
+              margin-top: 10px; }
+              .indexExperiencias .row2 section .testimonials .single-item .content p span {
+                font-size: 38px;
+                margin-right: 20px;
+                color: #ffffff; }
+            .indexExperiencias .row2 section .testimonials .single-item .content .socials i {
+              margin-right: 25px; }
   .indexExperiencias .row3 {
     width: 100%;
     height: auto; }
     .indexExperiencias .row3 .boxLine {
-      margin: 80px 25% 50px 25%; }
-      .indexExperiencias .row3 .boxLine div {
-        border: 1px solid black;
-        filter: opacity(0.4); }
+      width: 55%;
+      height: auto;
+      margin: 80px auto 0 auto; }
+      .indexExperiencias .row3 .boxLine img {
+        width: 100%;
+        height: auto;
+        filter: opacity(0.2); }
 
 .indexMain {
   height: auto;
   width: 100%; }
   .indexMain .boxTitle1 {
-    height: 90vh;
-    width: auto;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .indexMain .boxTitle1 div h1, .indexMain .boxTitle1 div .h1 {
-      color: #000000;
-      font-family: "Lancelot";
-      font-size: 4.5rem;
-      text-align: left; }
-    .indexMain .boxTitle1 div .titleTxt1 {
-      display: flex; }
-      .indexMain .boxTitle1 div .titleTxt1 .txt1 {
+    .indexMain .boxTitle1 div {
+      width: 80%; }
+      .indexMain .boxTitle1 div h1, .indexMain .boxTitle1 div .h1 {
         color: #000000;
         font-family: "Lancelot";
-        font-size: 3rem;
-        text-align: left;
-        position: relative;
-        top: 4px; }
-      .indexMain .boxTitle1 div .titleTxt1 .txt2 {
-        color: #000000;
-        font-family: "Lancelot";
-        font-size: 6.5rem;
-        text-align: left;
-        margin-left: 0px;
-        position: relative;
-        bottom: 42px; }
-    .indexMain .boxTitle1 div .titleTxt2 {
-      width: 500px; }
+        font-size: 4.5rem; }
+      .indexMain .boxTitle1 div .titleTxt1 {
+        display: flex;
+        flex-direction: row; }
+        .indexMain .boxTitle1 div .titleTxt1 .txt1 {
+          color: #000000;
+          font-family: "Lancelot";
+          font-size: 3rem;
+          text-align: left;
+          position: relative;
+          top: 6px; }
+        .indexMain .boxTitle1 div .titleTxt1 .txt2 {
+          color: #000000;
+          font-family: "Lancelot";
+          font-size: 6.5rem;
+          text-align: left;
+          margin-left: 0px;
+          position: relative;
+          bottom: 40px; }
       .indexMain .boxTitle1 div .titleTxt2 h3, .indexMain .boxTitle1 div .titleTxt2 .h3 {
         color: #322800;
         font-family: "ABeeZee";
@@ -256,18 +587,38 @@
         text-align: left;
         position: relative;
         bottom: 35px; }
-    .indexMain .boxTitle1 div .btn1 {
-      display: flex;
-      justify-content: start;
-      color: #ffffff;
-      background-color: #C49E00; }
+      .indexMain .boxTitle1 div .titleTxt2 .txt1 {
+        color: #322800;
+        font-family: "ABeeZee";
+        font-size: 1.125rem;
+        text-align: left;
+        position: relative;
+        bottom: 35px; }
+        .indexMain .boxTitle1 div .titleTxt2 .txt1 span {
+          color: #C49E00; }
+      .indexMain .boxTitle1 div .titleTxt2 .txt2 {
+        color: #322800;
+        font-family: "ABeeZee";
+        font-size: 1.125rem;
+        text-align: left;
+        position: relative;
+        bottom: 35px; }
+      .indexMain .boxTitle1 div .btn1 {
+        color: #ffffff;
+        background-color: #C49E00;
+        font-size: 1rem; }
+        .indexMain .boxTitle1 div .btn1:hover {
+          color: #ffffff;
+          background-color: #8C2D7C; }
+        .indexMain .boxTitle1 div .btn1 a {
+          color: #ffffff;
+          text-decoration: none; }
   .indexMain .boxImg1 {
-    height: 90vh;
-    width: auto; }
+    height: 100%;
+    width: 100%; }
     .indexMain .boxImg1 div img {
-      height: 90vh;
-      width: 100%;
-      box-shadow: 0px 5px 20px black; }
+      height: 91vh;
+      width: 100%; }
 
 .indexVrindha {
   height: auto;
@@ -326,6 +677,12 @@
       .indexKendra .boxTxt1 .txt1 .btn1 {
         color: #C49E00;
         background-color: #ffffff; }
+        .indexKendra .boxTxt1 .txt1 .btn1:hover {
+          color: #ffffff;
+          background-color: #8C2D7C; }
+        .indexKendra .boxTxt1 .txt1 .btn1 a {
+          text-decoration: none;
+          color: #C49E00; }
       .indexKendra .boxTxt1 .txt1 img {
         width: 38px;
         height: auto;
@@ -349,8 +706,7 @@
       .indexMetodo .row1 .boxTxt1 h2, .indexMetodo .row1 .boxTxt1 .h2 {
         color: #322800;
         font-family: "Lancelot";
-        font-size: 2rem;
-        text-align: left; }
+        font-size: 2.5rem; }
   .indexMetodo .row2 {
     width: 100%;
     height: auto; }
@@ -360,7 +716,11 @@
       justify-content: center;
       align-items: center; }
       .indexMetodo .row2 .boxIcon1 img {
-        width: 100px; }
+        width: 100px;
+        transition: all 100ms linear;
+        transform: scale(1); }
+        .indexMetodo .row2 .boxIcon1 img:hover {
+          transform: scale(1.1); }
       .indexMetodo .row2 .boxIcon1 h3, .indexMetodo .row2 .boxIcon1 .h3 {
         color: #C49E00;
         font-family: "ABeeZee";
@@ -379,7 +739,11 @@
       justify-content: center;
       align-items: center; }
       .indexMetodo .row2 .boxIcon2 img {
-        width: 100px; }
+        width: 100px;
+        transition: all 100ms linear;
+        transform: scale(1); }
+        .indexMetodo .row2 .boxIcon2 img:hover {
+          transform: scale(1.1); }
       .indexMetodo .row2 .boxIcon2 h3, .indexMetodo .row2 .boxIcon2 .h3 {
         color: #C49E00;
         font-family: "ABeeZee";
@@ -398,7 +762,11 @@
       justify-content: center;
       align-items: center; }
       .indexMetodo .row2 .boxIcon3 img {
-        width: 100px; }
+        width: 100px;
+        transition: all 100ms linear;
+        transform: scale(1); }
+        .indexMetodo .row2 .boxIcon3 img:hover {
+          transform: scale(1.1); }
       .indexMetodo .row2 .boxIcon3 h3, .indexMetodo .row2 .boxIcon3 .h3 {
         color: #C49E00;
         font-family: "ABeeZee";
@@ -417,7 +785,11 @@
       justify-content: center;
       align-items: center; }
       .indexMetodo .row2 .boxIcon4 img {
-        width: 100px; }
+        width: 100px;
+        transition: all 100ms linear;
+        transform: scale(1); }
+        .indexMetodo .row2 .boxIcon4 img:hover {
+          transform: scale(1.1); }
       .indexMetodo .row2 .boxIcon4 h3, .indexMetodo .row2 .boxIcon4 .h3 {
         color: #C49E00;
         font-family: "ABeeZee";
@@ -433,11 +805,24 @@
   .indexMetodo .row3 {
     width: 100%;
     height: auto; }
-    .indexMetodo .row3 .boxLine {
-      margin: 80px 25% 0 25%; }
-      .indexMetodo .row3 .boxLine div {
-        border: 1px solid black;
-        filter: opacity(0.4); }
+    .indexMetodo .row3 .boxImg {
+      width: 100%;
+      height: auto; }
+      .indexMetodo .row3 .boxImg img {
+        border-radius: 10PX;
+        width: 60%;
+        height: auto; }
+  .indexMetodo .row4 {
+    width: 100%;
+    height: auto; }
+    .indexMetodo .row4 .boxLine {
+      width: 55%;
+      height: auto;
+      margin: 80px auto 0 auto; }
+      .indexMetodo .row4 .boxLine img {
+        width: 100%;
+        height: auto;
+        filter: opacity(0.2); }
 
 .indexTecnicas {
   width: 100%; }
@@ -464,10 +849,10 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      margin-left: 100px; }
+      align-items: center; }
       .indexTecnicas .row2 .boxImg1 img {
-        width: 100%; }
+        width: 100%;
+        height: auto; }
     .indexTecnicas .row2 .boxTxt1 {
       width: 100%;
       height: 100%;
@@ -475,13 +860,13 @@
       flex-direction: column;
       justify-content: center;
       align-items: start;
-      margin-left: 30px; }
+      margin-left: 30px;
+      margin-top: 10px; }
       .indexTecnicas .row2 .boxTxt1 .txt1 {
         display: flex;
         flex-direction: row;
         justify-content: start;
         align-items: center;
-        margin-top: 20px;
         text-align: left; }
         .indexTecnicas .row2 .boxTxt1 .txt1 h3, .indexTecnicas .row2 .boxTxt1 .txt1 .h3 {
           color: #C49E00;
@@ -496,15 +881,15 @@
           top: 4px; }
       .indexTecnicas .row2 .boxTxt1 .txt2 {
         text-align: left;
-        width: 60%;
-        margin-top: 10px; }
+        width: 60%; }
         .indexTecnicas .row2 .boxTxt1 .txt2 p {
           color: #000000;
           font-family: "ABeeZee";
           font-size: calc(0.5rem + 0.5vw); }
       .indexTecnicas .row2 .boxTxt1 .btn1 {
         color: #ffffff;
-        background-color: #C49E00; }
+        background-color: #C49E00;
+        font-size: 0.6rem; }
   .indexTecnicas .row3 {
     width: 100%;
     height: 100%; }
@@ -520,7 +905,6 @@
         flex-direction: row;
         justify-content: end;
         align-items: center;
-        margin-top: 20px;
         text-align: right; }
         .indexTecnicas .row3 .boxTxt1 .txt1 h3, .indexTecnicas .row3 .boxTxt1 .txt1 .h3 {
           color: #C49E00;
@@ -543,16 +927,17 @@
           font-size: calc(0.5rem + 0.5vw); }
       .indexTecnicas .row3 .boxTxt1 .btn1 {
         color: #ffffff;
-        background-color: #C49E00; }
+        background-color: #C49E00;
+        font-size: 0.6rem; }
     .indexTecnicas .row3 .boxImg1 {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-left: 30px;
-      margin-right: 100px; }
+      margin-left: 30px; }
       .indexTecnicas .row3 .boxImg1 img {
-        width: 100%; }
+        width: 100%;
+        height: auto; }
   .indexTecnicas .row4 {
     width: 100%;
     height: 100%; }
@@ -560,10 +945,10 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      margin-left: 100px; }
+      align-items: center; }
       .indexTecnicas .row4 .boxImg1 img {
-        width: 100%; }
+        width: 100%;
+        height: auto; }
     .indexTecnicas .row4 .boxTxt1 {
       width: 100%;
       height: 100%;
@@ -571,13 +956,13 @@
       flex-direction: column;
       justify-content: center;
       align-items: start;
-      margin-left: 30px; }
+      margin-left: 30px;
+      margin-top: 10px; }
       .indexTecnicas .row4 .boxTxt1 .txt1 {
         display: flex;
         flex-direction: row;
         justify-content: start;
         align-items: center;
-        margin-top: 20px;
         text-align: left; }
         .indexTecnicas .row4 .boxTxt1 .txt1 h3, .indexTecnicas .row4 .boxTxt1 .txt1 .h3 {
           color: #C49E00;
@@ -592,15 +977,637 @@
           top: 4px; }
       .indexTecnicas .row4 .boxTxt1 .txt2 {
         text-align: left;
-        width: 60%;
-        margin-top: 10px; }
+        width: 80%; }
         .indexTecnicas .row4 .boxTxt1 .txt2 p {
           color: #000000;
           font-family: "ABeeZee";
           font-size: calc(0.5rem + 0.5vw); }
       .indexTecnicas .row4 .boxTxt1 .btn1 {
         color: #ffffff;
-        background-color: #C49E00; }
+        background-color: #C49E00;
+        font-size: 0.6rem; }
+
+@media screen and (max-width: 576px) {
+  .indexContacto {
+    height: auto;
+    width: 100%;
+    padding: 30px; }
+    .indexContacto .row1 {
+      width: 100%;
+      height: 30vh; }
+      .indexContacto .row1 .boxTxt1 {
+        width: auto;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: calc(3rem + 1vw); }
+        .indexContacto .row1 .boxTxt1 h2, .indexContacto .row1 .boxTxt1 .h2 {
+          color: #322800;
+          font-family: "Lancelot";
+          font-size: 2.5rem; }
+    .indexContacto .row2 {
+      height: auto;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .indexContacto .row2 .boxImg1 img {
+        width: 100%;
+        height: 100%; }
+      .indexContacto .row2 .boxForm1 {
+        width: 100%;
+        height: 100%;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: calc(3rem + 1vw); }
+        .indexContacto .row2 .boxForm1 .boxTxt1 h2, .indexContacto .row2 .boxForm1 .boxTxt1 .h2 {
+          color: #C49E00;
+          font-family: "ABeeZee";
+          font-size: 1.5rem; }
+        .indexContacto .row2 .boxForm1 .boxBtn1 {
+          display: flex;
+          justify-content: center; }
+          .indexContacto .row2 .boxForm1 .boxBtn1 .btn1 {
+            color: #ffffff;
+            background-color: #C49E00;
+            font-size: 1rem;
+            width: 100%; }
+            .indexContacto .row2 .boxForm1 .boxBtn1 .btn1:hover {
+              color: #ffffff;
+              background-color: #8C2D7C; } }
+
+@media screen and (max-width: 576px) {
+  .indexEquipo {
+    width: 100%;
+    height: auto; }
+    .indexEquipo .row1 {
+      width: 100%;
+      height: 30vh; }
+      .indexEquipo .row1 .boxTxt1 {
+        width: auto;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: calc(3rem + 1vw); }
+        .indexEquipo .row1 .boxTxt1 h2, .indexEquipo .row1 .boxTxt1 .h2 {
+          color: #322800;
+          font-family: "Lancelot";
+          font-size: 2.5rem; }
+    .indexEquipo .row2 {
+      width: 100%;
+      height: 100%; }
+      .indexEquipo .row2 .boxEquipo1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .indexEquipo .row2 .boxEquipo1 .card {
+          position: relative;
+          width: 300px;
+          height: 350px; }
+        .indexEquipo .row2 .boxEquipo1 .card .face {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          border-radius: 10px;
+          overflow: hidden;
+          transition: .5s; }
+        .indexEquipo .row2 .boxEquipo1 .card .front {
+          transform: perspective(600px) rotateY(0deg); }
+        .indexEquipo .row2 .boxEquipo1 .card .front img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .indexEquipo .row2 .boxEquipo1 .card .front h3, .indexEquipo .row2 .boxEquipo1 .card .front .h3 {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 45px;
+          line-height: 45px;
+          color: white;
+          background: rgba(0, 0, 0, 0.4);
+          text-align: center; }
+        .indexEquipo .row2 .boxEquipo1 .card .back {
+          transform: perspective(600px) rotateY(180deg);
+          background: #032336;
+          color: #f3f3f3;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: center; }
+        .indexEquipo .row2 .boxEquipo1 .card .back img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          opacity: 0.5; }
+        .indexEquipo .row2 .boxEquipo1 .card .back .link {
+          border-top: solid 1px #f3f3f3;
+          height: 50px;
+          line-height: 50px; }
+        .indexEquipo .row2 .boxEquipo1 .card .back .link a {
+          color: #f3f3f3; }
+        .indexEquipo .row2 .boxEquipo1 .card .back h3, .indexEquipo .row2 .boxEquipo1 .card .back .h3 {
+          font-size: 30px;
+          margin-top: 20px;
+          letter-spacing: 2px; }
+        .indexEquipo .row2 .boxEquipo1 .card .back p {
+          letter-spacing: 1px; }
+        .indexEquipo .row2 .boxEquipo1 .card:hover .front {
+          transform: perspective(600px) rotateY(180deg); }
+        .indexEquipo .row2 .boxEquipo1 .card:hover .back {
+          transform: perspective(600px) rotateY(360deg); }
+        .indexEquipo .row2 .boxEquipo1 .boxTxt1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .indexEquipo .row2 .boxEquipo1 .boxTxt1 .img1 {
+            width: 300px;
+            height: auto; }
+            .indexEquipo .row2 .boxEquipo1 .boxTxt1 .img1 img {
+              width: 100%;
+              height: auto; }
+          .indexEquipo .row2 .boxEquipo1 .boxTxt1 .txt1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px; }
+            .indexEquipo .row2 .boxEquipo1 .boxTxt1 .txt1 h3, .indexEquipo .row2 .boxEquipo1 .boxTxt1 .txt1 .h3 {
+              color: #C49E00;
+              font-family: "ABeeZee";
+              font-size: calc(0.5rem + 0.5vw); }
+            .indexEquipo .row2 .boxEquipo1 .boxTxt1 .txt1 p {
+              color: #000000;
+              font-family: "ABeeZee";
+              font-size: calc(0.3rem + 0.5vw);
+              margin-left: 5px;
+              position: relative;
+              top: 4px; }
+          .indexEquipo .row2 .boxEquipo1 .boxTxt1 .txt2 {
+            text-align: center;
+            width: 60%;
+            margin-top: 10px; }
+            .indexEquipo .row2 .boxEquipo1 .boxTxt1 .txt2 p {
+              color: #000000;
+              font-family: "ABeeZee";
+              font-size: calc(0.5rem + 0.5vw); }
+          .indexEquipo .row2 .boxEquipo1 .boxTxt1 .btn1 {
+            color: #ffffff;
+            background-color: #C49E00;
+            font-size: 1rem; }
+      .indexEquipo .row2 .boxEquipo2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .indexEquipo .row2 .boxEquipo2 .card {
+          position: relative;
+          width: 300px;
+          height: 350px; }
+        .indexEquipo .row2 .boxEquipo2 .card .face {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          border-radius: 10px;
+          overflow: hidden;
+          transition: .5s; }
+        .indexEquipo .row2 .boxEquipo2 .card .front {
+          transform: perspective(600px) rotateY(0deg); }
+        .indexEquipo .row2 .boxEquipo2 .card .front img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .indexEquipo .row2 .boxEquipo2 .card .front h3, .indexEquipo .row2 .boxEquipo2 .card .front .h3 {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 45px;
+          line-height: 45px;
+          color: white;
+          background: rgba(0, 0, 0, 0.4);
+          text-align: center; }
+        .indexEquipo .row2 .boxEquipo2 .card .back {
+          transform: perspective(600px) rotateY(180deg);
+          background: #032336;
+          color: #f3f3f3;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: center; }
+        .indexEquipo .row2 .boxEquipo2 .card .back img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          opacity: 0.5; }
+        .indexEquipo .row2 .boxEquipo2 .card .back .link {
+          border-top: solid 1px #f3f3f3;
+          height: 50px;
+          line-height: 50px; }
+        .indexEquipo .row2 .boxEquipo2 .card .back .link a {
+          color: #f3f3f3; }
+        .indexEquipo .row2 .boxEquipo2 .card .back h3, .indexEquipo .row2 .boxEquipo2 .card .back .h3 {
+          font-size: 30px;
+          margin-top: 20px;
+          letter-spacing: 2px; }
+        .indexEquipo .row2 .boxEquipo2 .card .back p {
+          letter-spacing: 1px; }
+        .indexEquipo .row2 .boxEquipo2 .card:hover .front {
+          transform: perspective(600px) rotateY(180deg); }
+        .indexEquipo .row2 .boxEquipo2 .card:hover .back {
+          transform: perspective(600px) rotateY(360deg); }
+        .indexEquipo .row2 .boxEquipo2 .boxTxt1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .indexEquipo .row2 .boxEquipo2 .boxTxt1 .img1 {
+            width: 300px;
+            height: auto; }
+            .indexEquipo .row2 .boxEquipo2 .boxTxt1 .img1 img {
+              width: 100%;
+              height: auto; }
+          .indexEquipo .row2 .boxEquipo2 .boxTxt1 .txt1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px; }
+            .indexEquipo .row2 .boxEquipo2 .boxTxt1 .txt1 h3, .indexEquipo .row2 .boxEquipo2 .boxTxt1 .txt1 .h3 {
+              color: #C49E00;
+              font-family: "ABeeZee";
+              font-size: calc(0.5rem + 0.5vw); }
+            .indexEquipo .row2 .boxEquipo2 .boxTxt1 .txt1 p {
+              color: #000000;
+              font-family: "ABeeZee";
+              font-size: calc(0.3rem + 0.5vw);
+              margin-left: 5px;
+              position: relative;
+              top: 4px; }
+          .indexEquipo .row2 .boxEquipo2 .boxTxt1 .txt2 {
+            text-align: center;
+            width: 60%;
+            margin-top: 10px; }
+            .indexEquipo .row2 .boxEquipo2 .boxTxt1 .txt2 p {
+              color: #000000;
+              font-family: "ABeeZee";
+              font-size: calc(0.5rem + 0.5vw); }
+          .indexEquipo .row2 .boxEquipo2 .boxTxt1 .btn1 {
+            color: #ffffff;
+            background-color: #C49E00;
+            font-size: 1rem; }
+      .indexEquipo .row2 .boxEquipo3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .indexEquipo .row2 .boxEquipo3 .card {
+          position: relative;
+          width: 300px;
+          height: 350px; }
+        .indexEquipo .row2 .boxEquipo3 .card .face {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          border-radius: 10px;
+          overflow: hidden;
+          transition: .5s; }
+        .indexEquipo .row2 .boxEquipo3 .card .front {
+          transform: perspective(600px) rotateY(0deg); }
+        .indexEquipo .row2 .boxEquipo3 .card .front img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .indexEquipo .row2 .boxEquipo3 .card .front h3, .indexEquipo .row2 .boxEquipo3 .card .front .h3 {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 45px;
+          line-height: 45px;
+          color: white;
+          background: rgba(0, 0, 0, 0.4);
+          text-align: center; }
+        .indexEquipo .row2 .boxEquipo3 .card .back {
+          transform: perspective(600px) rotateY(180deg);
+          background: #032336;
+          color: #f3f3f3;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: center; }
+        .indexEquipo .row2 .boxEquipo3 .card .back img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          opacity: 0.5; }
+        .indexEquipo .row2 .boxEquipo3 .card .back .link {
+          border-top: solid 1px #f3f3f3;
+          height: 50px;
+          line-height: 50px; }
+        .indexEquipo .row2 .boxEquipo3 .card .back .link a {
+          color: #f3f3f3; }
+        .indexEquipo .row2 .boxEquipo3 .card .back h3, .indexEquipo .row2 .boxEquipo3 .card .back .h3 {
+          font-size: 30px;
+          margin-top: 20px;
+          letter-spacing: 2px; }
+        .indexEquipo .row2 .boxEquipo3 .card .back p {
+          letter-spacing: 1px; }
+        .indexEquipo .row2 .boxEquipo3 .card:hover .front {
+          transform: perspective(600px) rotateY(180deg); }
+        .indexEquipo .row2 .boxEquipo3 .card:hover .back {
+          transform: perspective(600px) rotateY(360deg); }
+        .indexEquipo .row2 .boxEquipo3 .boxTxt1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .indexEquipo .row2 .boxEquipo3 .boxTxt1 .img1 {
+            width: 300px;
+            height: auto; }
+            .indexEquipo .row2 .boxEquipo3 .boxTxt1 .img1 img {
+              width: 100%;
+              height: auto; }
+          .indexEquipo .row2 .boxEquipo3 .boxTxt1 .txt1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px; }
+            .indexEquipo .row2 .boxEquipo3 .boxTxt1 .txt1 h3, .indexEquipo .row2 .boxEquipo3 .boxTxt1 .txt1 .h3 {
+              color: #C49E00;
+              font-family: "ABeeZee";
+              font-size: calc(0.5rem + 0.5vw); }
+            .indexEquipo .row2 .boxEquipo3 .boxTxt1 .txt1 p {
+              color: #000000;
+              font-family: "ABeeZee";
+              font-size: calc(0.3rem + 0.5vw);
+              margin-left: 5px;
+              position: relative;
+              top: 4px; }
+          .indexEquipo .row2 .boxEquipo3 .boxTxt1 .txt2 {
+            text-align: center;
+            width: 60%;
+            margin-top: 10px; }
+            .indexEquipo .row2 .boxEquipo3 .boxTxt1 .txt2 p {
+              color: #000000;
+              font-family: "ABeeZee";
+              font-size: calc(0.5rem + 0.5vw); }
+          .indexEquipo .row2 .boxEquipo3 .boxTxt1 .btn1 {
+            color: #ffffff;
+            background-color: #C49E00;
+            font-size: 1rem; }
+      .indexEquipo .row2 .row3 {
+        width: 100%;
+        height: auto; }
+        .indexEquipo .row2 .row3 .boxLine {
+          width: 55%;
+          height: auto;
+          margin: 80px auto 0 auto; }
+          .indexEquipo .row2 .row3 .boxLine img {
+            width: 100%;
+            height: auto;
+            filter: opacity(0.6); } }
+
+@media screen and (max-width: 576px) {
+  .indexMain {
+    height: auto;
+    width: 100%; }
+    .indexMain .boxTitle1 {
+      background-image: url("../../assets/images/top/fondoInicio.png");
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .indexMain .boxTitle1 div {
+        width: 90%; }
+        .indexMain .boxTitle1 div h1, .indexMain .boxTitle1 div .h1 {
+          color: #ffffff;
+          font-family: "Lancelot";
+          font-size: 2rem;
+          position: relative;
+          top: 20px; }
+        .indexMain .boxTitle1 div .titleTxt1 {
+          display: flex;
+          flex-direction: row; }
+          .indexMain .boxTitle1 div .titleTxt1 .txt1 {
+            color: #ffffff;
+            font-family: "Lancelot";
+            font-size: 1rem;
+            text-align: left;
+            position: relative;
+            top: 32px; }
+          .indexMain .boxTitle1 div .titleTxt1 .txt2 {
+            color: #ffffff;
+            font-family: "Lancelot";
+            font-size: 3.5rem;
+            text-align: left;
+            margin-left: 0px;
+            position: relative;
+            top: 0px; }
+        .indexMain .boxTitle1 div .titleTxt2 .txt1 {
+          color: #ffffff;
+          font-family: "ABeeZee";
+          font-size: .5rem;
+          text-align: left;
+          position: relative;
+          bottom: 10px; }
+        .indexMain .boxTitle1 div .titleTxt2 .txt2 {
+          color: #ffffff;
+          font-family: "ABeeZee";
+          font-size: .6rem;
+          text-align: left;
+          position: relative;
+          bottom: 10px; }
+        .indexMain .boxTitle1 div .btn1 {
+          color: #ffffff;
+          background-color: #C49E00;
+          font-size: 0.4rem; }
+    .indexMain .boxImg1 {
+      height: 100%;
+      width: 100%; }
+      .indexMain .boxImg1 div img {
+        height: auto;
+        width: 100%;
+        box-shadow: 0px 5px 20px black; }
+  .indexVrindha {
+    height: auto;
+    width: 100%; }
+    .indexVrindha .boxImg1 img {
+      width: 100%;
+      height: auto; }
+    .indexVrindha .boxTxt1 {
+      width: auto;
+      height: 100%;
+      background-color: #C49E00;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      padding: calc(1rem + 1vw); }
+      .indexVrindha .boxTxt1 h1, .indexVrindha .boxTxt1 .h1 {
+        color: #ffffff;
+        font-family: "ABeeZee";
+        font-size: 1rem;
+        text-align: left; }
+      .indexVrindha .boxTxt1 p {
+        color: #ffffff;
+        font-family: "ABeeZee";
+        font-size: calc(0.4rem + 0.5vw);
+        text-align: left; } }
+
+@media screen and (max-width: 576px) {
+  .indexMetodo {
+    width: 100%;
+    height: auto; }
+    .indexMetodo .row1 {
+      width: 100%;
+      height: 30vh; }
+      .indexMetodo .row1 .boxTxt1 {
+        width: auto;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: calc(3rem + 1vw); }
+        .indexMetodo .row1 .boxTxt1 h2, .indexMetodo .row1 .boxTxt1 .h2 {
+          color: #322800;
+          font-family: "Lancelot";
+          font-size: 2.5rem; }
+    .indexMetodo .row2 {
+      width: 100%;
+      height: auto; }
+      .indexMetodo .row2 .boxIcon1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .indexMetodo .row2 .boxIcon1 img {
+          width: 100px;
+          transition: all 100ms linear;
+          transform: scale(1); }
+          .indexMetodo .row2 .boxIcon1 img:hover {
+            transform: scale(1.1); }
+        .indexMetodo .row2 .boxIcon1 h3, .indexMetodo .row2 .boxIcon1 .h3 {
+          color: #C49E00;
+          font-family: "ABeeZee";
+          font-size: calc(0.5rem + 0.5vw); }
+        .indexMetodo .row2 .boxIcon1 div {
+          text-align: center;
+          width: 60%;
+          margin-top: 10px; }
+          .indexMetodo .row2 .boxIcon1 div p {
+            color: #000000;
+            font-family: "ABeeZee";
+            font-size: calc(0.5rem + 0.5vw); }
+      .indexMetodo .row2 .boxIcon2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .indexMetodo .row2 .boxIcon2 img {
+          width: 100px;
+          transition: all 100ms linear;
+          transform: scale(1); }
+          .indexMetodo .row2 .boxIcon2 img:hover {
+            transform: scale(1.1); }
+        .indexMetodo .row2 .boxIcon2 h3, .indexMetodo .row2 .boxIcon2 .h3 {
+          color: #C49E00;
+          font-family: "ABeeZee";
+          font-size: calc(0.5rem + 0.5vw); }
+        .indexMetodo .row2 .boxIcon2 div {
+          text-align: center;
+          width: 60%;
+          margin-top: 10px; }
+          .indexMetodo .row2 .boxIcon2 div p {
+            color: #000000;
+            font-family: "ABeeZee";
+            font-size: calc(0.5rem + 0.5vw); }
+      .indexMetodo .row2 .boxIcon3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .indexMetodo .row2 .boxIcon3 img {
+          width: 100px;
+          transition: all 100ms linear;
+          transform: scale(1); }
+          .indexMetodo .row2 .boxIcon3 img:hover {
+            transform: scale(1.1); }
+        .indexMetodo .row2 .boxIcon3 h3, .indexMetodo .row2 .boxIcon3 .h3 {
+          color: #C49E00;
+          font-family: "ABeeZee";
+          font-size: calc(0.5rem + 0.5vw); }
+        .indexMetodo .row2 .boxIcon3 div {
+          text-align: center;
+          width: 60%;
+          margin-top: 10px; }
+          .indexMetodo .row2 .boxIcon3 div p {
+            color: #000000;
+            font-family: "ABeeZee";
+            font-size: calc(0.5rem + 0.5vw); }
+      .indexMetodo .row2 .boxIcon4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .indexMetodo .row2 .boxIcon4 img {
+          width: 100px;
+          transition: all 100ms linear;
+          transform: scale(1); }
+          .indexMetodo .row2 .boxIcon4 img:hover {
+            transform: scale(1.1); }
+        .indexMetodo .row2 .boxIcon4 h3, .indexMetodo .row2 .boxIcon4 .h3 {
+          color: #C49E00;
+          font-family: "ABeeZee";
+          font-size: calc(0.5rem + 0.5vw); }
+        .indexMetodo .row2 .boxIcon4 div {
+          text-align: center;
+          width: 60%;
+          margin-top: 10px; }
+          .indexMetodo .row2 .boxIcon4 div p {
+            color: #000000;
+            font-family: "ABeeZee";
+            font-size: calc(0.5rem + 0.5vw); }
+    .indexMetodo .row3 {
+      width: 100%;
+      height: auto; }
+      .indexMetodo .row3 .boxImg {
+        width: 100%;
+        height: auto; }
+        .indexMetodo .row3 .boxImg img {
+          border-radius: 10PX;
+          width: 60%;
+          height: auto; }
+    .indexMetodo .row4 {
+      width: 100%;
+      height: auto; }
+      .indexMetodo .row4 .boxLine {
+        width: 55%;
+        height: auto;
+        margin: 80px auto 0 auto; }
+        .indexMetodo .row4 .boxLine img {
+          width: 100%;
+          height: auto;
+          filter: opacity(0.2); } }
 
 :root,
 [data-bs-theme="light"] {
